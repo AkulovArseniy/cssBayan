@@ -23,7 +23,6 @@
     margin: 0 auto;
     cursor: pointer;
     background-color: #337AB7;
-    display: block;
     padding: 15px 20px;
     width: 42%;
     color: #BFE2FF;
@@ -42,7 +41,6 @@
     display: none;
 }
 .acor-container label:before {
-    content: '\276F';
     float: right;
 }
 .acor-container input:checked + label {
@@ -50,7 +48,7 @@
     color: #FFF;
     box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
 }
-.acor-container input:checked + label:before {
+.acor-container input:checked + label .fa-solid.fa-arrow-right {
     transition: transform .9s;
     transform: rotate(90deg);
 }
@@ -60,6 +58,29 @@
     color: #000;
     padding: 20px 30px 10px;
 }
+.acor-container input:hover + label .fa-solid.fa-arrow-right {
+    transition: transform .9s;
+    transform: rotate(90deg);
+}
+.acor-container input:hover + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
+.acor-container input + label + .acor-body:hover {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
 .memes{
     margin: 0 auto;
+}
+.fa-solid.fa-arrow-right{
+    padding-right: 5px;
+}
+label{
+    display: flex;
+    justify-content: space-between;
 }
