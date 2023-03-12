@@ -33,9 +33,10 @@
     font-size: 25px;
     transition: color .75s;
 }
-.acor-container label:hover {
+@media (hover: hover) {.acor-container label:hover {
     
     color: rgb(228, 0, 0);
+}
 }
 .acor-container input{
     display: none;
@@ -58,23 +59,23 @@
     color: #000;
     padding: 20px 30px 10px;
 }
-.acor-container input:hover + label .fa-solid.fa-arrow-right {
+@media (hover: hover) {.acor-container input:hover + label .fa-solid.fa-arrow-right {
     transition: transform .9s;
     transform: rotate(90deg);
-}
-.acor-container input:hover + label + .acor-body {
+}}
+@media (hover: hover) {.acor-container input:hover + label + .acor-body {
     height: auto;
     margin-top: -5px;
     color: #000;
     padding: 20px 30px 10px;
-}
-.acor-container input + label + .acor-body:hover {
+}}
+@media (hover: hover) {.acor-container input + label + .acor-body:hover {
 
     height: auto;
     margin-top: -5px;
     color: #000;
     padding: 20px 30px 10px;
-}
+}}
 .memes{
     margin: 0 auto;
 }
